@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0/win7-x64",
-    "signature": "024b69ff1b2ecb34a6c9ed15ef6035e0fb57773b"
+    "signature": "3969db5fda5310bedb5c4e23d2c80b21bfe5ac8a"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,7 +13,8 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.ServiceFabric": "6.1.467",
           "Microsoft.ServiceFabric.Data": "3.0.467",
-          "Microsoft.ServiceFabric.Services": "3.0.467"
+          "Microsoft.ServiceFabric.Services": "3.0.467",
+          "Microsoft.ServiceFabric.Services.Remoting": "3.0.467"
         },
         "runtime": {
           "ECommerce.ProductCatalog.dll": {}
@@ -72,6 +73,15 @@
           "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Diagnostics.dll": {}
         }
       },
+      "Microsoft.ServiceFabric.FabricTransport.Internal/3.0.467": {
+        "dependencies": {
+          "Microsoft.ServiceFabric": "6.1.467"
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {},
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {}
+        }
+      },
       "Microsoft.ServiceFabric.Services/3.0.467": {
         "dependencies": {
           "Microsoft.ServiceFabric.Data": "3.0.467",
@@ -79,6 +89,16 @@
         },
         "runtime": {
           "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Services.Remoting/3.0.467": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Diagnostics.Internal": "3.0.467",
+          "Microsoft.ServiceFabric.FabricTransport.Internal": "3.0.467",
+          "Microsoft.ServiceFabric.Services": "3.0.467"
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {}
         }
       },
       "NETStandard.Library/2.0.0": {
@@ -322,6 +342,9 @@
         }
       },
       "ECommerce.Productcatalog.Model/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services.Remoting": "3.0.467"
+        },
         "runtime": {
           "ECommerce.Productcatalog.Model.dll": {}
         }
@@ -390,12 +413,26 @@
       "path": "microsoft.servicefabric.diagnostics.internal/3.0.467",
       "hashPath": "microsoft.servicefabric.diagnostics.internal.3.0.467.nupkg.sha512"
     },
+    "Microsoft.ServiceFabric.FabricTransport.Internal/3.0.467": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5v5mP5+02LvSDjJKyVwRboYLCkoE2Qhx1IGC+mQLwyJq3IRVE7dPnT2c/XHV/zdLpxzia65UCByVHsJLBq0uSA==",
+      "path": "microsoft.servicefabric.fabrictransport.internal/3.0.467",
+      "hashPath": "microsoft.servicefabric.fabrictransport.internal.3.0.467.nupkg.sha512"
+    },
     "Microsoft.ServiceFabric.Services/3.0.467": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-M60aHKi1e0h9YQgEFUpK3HinJD+BfTP9NWBTktRoaUmisQtmU9fIpRPj67Uk46clOLSLEYzLmgEoZqkpyxW79A==",
       "path": "microsoft.servicefabric.services/3.0.467",
       "hashPath": "microsoft.servicefabric.services.3.0.467.nupkg.sha512"
+    },
+    "Microsoft.ServiceFabric.Services.Remoting/3.0.467": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VGGbToBvRxLcHGN/2eQQAwuauwPAvKdtOnv2iZ7rRq/6UDmNuoqjybIomgn/as63EnWF7SS9N/SbuUyc63xKYQ==",
+      "path": "microsoft.servicefabric.services.remoting/3.0.467",
+      "hashPath": "microsoft.servicefabric.services.remoting.3.0.467.nupkg.sha512"
     },
     "NETStandard.Library/2.0.0": {
       "type": "package",

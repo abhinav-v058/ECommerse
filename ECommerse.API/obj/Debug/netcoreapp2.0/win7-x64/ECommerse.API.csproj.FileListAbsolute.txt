@@ -12,3 +12,6 @@ C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\bin\Debug\netcoreapp2.0\win7
 C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\obj\Debug\netcoreapp2.0\win7-x64\ECommerse.API.csprojResolveAssemblyReference.cache
 C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\obj\Debug\netcoreapp2.0\win7-x64\ECommerse.API.dll
 C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\obj\Debug\netcoreapp2.0\win7-x64\ECommerse.API.pdb
+C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\bin\Debug\netcoreapp2.0\win7-x64\ECommerce.Productcatalog.Model.dll
+C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\bin\Debug\netcoreapp2.0\win7-x64\ECommerce.Productcatalog.Model.pdb
+C:\Users\Abhin\source\repos\ECommerse\ECommerse.API\obj\Debug\netcoreapp2.0\win7-x64\ECommerse.API.csproj.CopyComplete

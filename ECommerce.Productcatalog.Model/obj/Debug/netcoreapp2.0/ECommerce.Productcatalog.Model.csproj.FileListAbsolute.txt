@@ -1,9 +1,9 @@
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\bin\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.deps.json
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\bin\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.dll
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\bin\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.pdb
-C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.csprojResolveAssemblyReference.cache
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.csproj.CoreCompileInputs.cache
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.AssemblyInfoInputs.cache
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.AssemblyInfo.cs
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.dll
 C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.pdb
+C:\Users\Abhin\source\repos\ECommerse\ECommerce.Productcatalog.Model\obj\Debug\netcoreapp2.0\ECommerce.Productcatalog.Model.csprojResolveAssemblyReference.cache

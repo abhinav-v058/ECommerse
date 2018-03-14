@@ -310,6 +310,54 @@
           }
         }
       },
+      "Microsoft.ServiceFabric.FabricTransport.Internal/3.0.467": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[6.1.467]"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {},
+          "ref/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.McgInterop.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.McgInterop.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/linux/lib/netstandard2.0/System.Private.CompilerServices.ICastable.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/linux/lib/netstandard2.0/System.Private.CoreLib.InteropServices.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/linux/lib/netstandard2.0/System.Private.Interop.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "Microsoft.ServiceFabric.Services/3.0.467": {
         "type": "package",
         "dependencies": {
@@ -325,6 +373,27 @@
             "rid": "linux"
           },
           "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Microsoft.ServiceFabric.Services.Remoting/3.0.467": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Diagnostics.Internal": "[3.0.467]",
+          "Microsoft.ServiceFabric.FabricTransport.Internal": "[3.0.467]",
+          "Microsoft.ServiceFabric.Services": "[3.0.467]"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -348,6 +417,9 @@
       "ECommerce.Productcatalog.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services.Remoting": "3.0.467"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Productcatalog.Model.dll": {}
         },
@@ -588,6 +660,20 @@
           "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Diagnostics.dll": {}
         }
       },
+      "Microsoft.ServiceFabric.FabricTransport.Internal/3.0.467": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric": "[6.1.467]"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {},
+          "ref/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {},
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {}
+        }
+      },
       "Microsoft.ServiceFabric.Services/3.0.467": {
         "type": "package",
         "dependencies": {
@@ -599,6 +685,20 @@
         },
         "runtime": {
           "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Services.Remoting/3.0.467": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Diagnostics.Internal": "[3.0.467]",
+          "Microsoft.ServiceFabric.FabricTransport.Internal": "[3.0.467]",
+          "Microsoft.ServiceFabric.Services": "[3.0.467]"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {}
         }
       },
       "NETStandard.Library/2.0.0": {
@@ -861,6 +961,9 @@
       "ECommerce.Productcatalog.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services.Remoting": "3.0.467"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Productcatalog.Model.dll": {}
         },
@@ -1314,6 +1417,38 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Diagnostics.dll"
       ]
     },
+    "Microsoft.ServiceFabric.FabricTransport.Internal/3.0.467": {
+      "sha512": "5v5mP5+02LvSDjJKyVwRboYLCkoE2Qhx1IGC+mQLwyJq3IRVE7dPnT2c/XHV/zdLpxzia65UCByVHsJLBq0uSA==",
+      "type": "package",
+      "path": "microsoft.servicefabric.fabrictransport.internal/3.0.467",
+      "files": [
+        "lib/net45/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "lib/net45/Microsoft.ServiceFabric.FabricTransport.V2.xml",
+        "lib/net45/Microsoft.ServiceFabric.FabricTransport.dll",
+        "lib/net45/Microsoft.ServiceFabric.FabricTransport.xml",
+        "microsoft.servicefabric.fabrictransport.internal.3.0.467.nupkg.sha512",
+        "microsoft.servicefabric.fabrictransport.internal.nuspec",
+        "ref/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "ref/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll",
+        "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.McgInterop.dll",
+        "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.McgInterop.dll",
+        "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll",
+        "runtimes/linux/lib/netstandard2.0/System.Private.CompilerServices.ICastable.dll",
+        "runtimes/linux/lib/netstandard2.0/System.Private.CoreLib.InteropServices.dll",
+        "runtimes/linux/lib/netstandard2.0/System.Private.Interop.dll",
+        "runtimes/win/lib/net461/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "runtimes/win/lib/net461/Microsoft.ServiceFabric.FabricTransport.dll",
+        "runtimes/win/lib/net462/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "runtimes/win/lib/net462/Microsoft.ServiceFabric.FabricTransport.dll",
+        "runtimes/win/lib/net47/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "runtimes/win/lib/net47/Microsoft.ServiceFabric.FabricTransport.dll",
+        "runtimes/win/lib/net471/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "runtimes/win/lib/net471/Microsoft.ServiceFabric.FabricTransport.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll"
+      ]
+    },
     "Microsoft.ServiceFabric.Services/3.0.467": {
       "sha512": "M60aHKi1e0h9YQgEFUpK3HinJD+BfTP9NWBTktRoaUmisQtmU9fIpRPj67Uk46clOLSLEYzLmgEoZqkpyxW79A==",
       "type": "package",
@@ -1330,6 +1465,24 @@
         "runtimes/win/lib/net47/Microsoft.ServiceFabric.Services.dll",
         "runtimes/win/lib/net471/Microsoft.ServiceFabric.Services.dll",
         "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.dll"
+      ]
+    },
+    "Microsoft.ServiceFabric.Services.Remoting/3.0.467": {
+      "sha512": "VGGbToBvRxLcHGN/2eQQAwuauwPAvKdtOnv2iZ7rRq/6UDmNuoqjybIomgn/as63EnWF7SS9N/SbuUyc63xKYQ==",
+      "type": "package",
+      "path": "microsoft.servicefabric.services.remoting/3.0.467",
+      "files": [
+        "lib/net45/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "lib/net45/Microsoft.ServiceFabric.Services.Remoting.xml",
+        "microsoft.servicefabric.services.remoting.3.0.467.nupkg.sha512",
+        "microsoft.servicefabric.services.remoting.nuspec",
+        "ref/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "runtimes/linux/lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "runtimes/win/lib/net461/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "runtimes/win/lib/net462/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "runtimes/win/lib/net47/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "runtimes/win/lib/net471/Microsoft.ServiceFabric.Services.Remoting.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -1733,7 +1886,8 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.ServiceFabric >= 6.1.467",
       "Microsoft.ServiceFabric.Data >= 3.0.467",
-      "Microsoft.ServiceFabric.Services >= 3.0.467"
+      "Microsoft.ServiceFabric.Services >= 3.0.467",
+      "Microsoft.ServiceFabric.Services.Remoting >= 3.0.467"
     ]
   },
   "packageFolders": {
@@ -1800,6 +1954,10 @@
             "version": "[3.0.467, )"
           },
           "Microsoft.ServiceFabric.Services": {
+            "target": "Package",
+            "version": "[3.0.467, )"
+          },
+          "Microsoft.ServiceFabric.Services.Remoting": {
             "target": "Package",
             "version": "[3.0.467, )"
           }
